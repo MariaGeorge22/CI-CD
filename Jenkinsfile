@@ -4,7 +4,7 @@ pipeline {
         stage('Clone repository') {
             steps {
                 // Checkout code from GitHub
-                branch: 'main', url: 'https://github.com/MariaGeorge22/CI-CD.git'
+                git url: 'https://github.com/MariaGeorge22/CI-CD.git', branch: 'main'
             }
         }
         stage("Run App") {
